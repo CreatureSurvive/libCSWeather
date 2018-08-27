@@ -30,4 +30,17 @@ A simple little library for fetching the current weather information.
 
 
 
+## usage
+
+```
+#include <CSWeatherInformationProvider.h>
+
+[[CSWeatherInformationProvider sharedProvider] updatedWeatherWithCompletion:^(NSDictionary *weather) {
+    NSString *condition = weather[@"kCurrentConditionImage"];
+    NSString *temp = weather[@"kCurrentTemperatureForLocale"];
+    UIImage *icon = weather[@"kCurrentConditionImage"];
+
+    // blah blah blah
+}];
+```
 
