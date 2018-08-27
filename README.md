@@ -44,3 +44,5 @@ A simple little library for fetching the current weather information.
 }];
 ```
 
+weather information will only update if the time since last update has been more than 15 minutes, or the city has changed. using this method more than once in a 15 minute interval will return cached results from the last update.
+
