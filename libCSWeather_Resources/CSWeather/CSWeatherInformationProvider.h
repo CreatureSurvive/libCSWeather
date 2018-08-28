@@ -10,7 +10,7 @@
 
 @interface CSWeatherInformationProvider : NSObject 
 @property (nonatomic, retain) NSDictionary *currentWeather;
-+ (id)sharedProvider;
++ (CSWeatherInformationProvider *)sharedProvider;
 - (NSString *)currentTemperature:(BOOL)celsius;
 - (NSString *)currentHigh:(BOOL)celsius;
 - (NSString *)currentLow:(BOOL)celsius;
